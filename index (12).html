@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkipSchool Proxies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pbVl+92Gxu68XtnuFVxCZGqFwWAKTb0oG7kAcvsmKUZ9nUZl8QXfRfuvU1zP8zYmX0LQGJz1INFFGb88dSgJbw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 0.3rem;
+      text-shadow: 0 0 10px rgba(160, 0, 255, 0.4);
+      z-index: 1;
+    }
+
+    p {
+      color: #ccc;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      z-index: 1;
+    }
+
+    .proxy-box {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
+      background-color: #1f1f1f;
+      padding: 20px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    select {
+      background-color: #2a2a2a;
+      color: white;
+      border: none;
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      min-width: 200px;
+    }
+
+    button {
+      background: linear-gradient(135deg, #a000ff, #ff00cc);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #c12aff;
+    }
+
+    label {
+      font-size: 1rem;
+      color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <h1><i class="fas fa-shield-alt"></i> SkipSchool Proxies</h1>
+  <p>Beyond Borders.</p>
+
+  <div class="proxy-box">
+    <label for="proxySelect">Give me a proxy for</label>
+    <select id="proxySelect">
+      <optgroup label="Popular Proxies">
+        <option value="https://interstellar.example.com">Interstellar(broken)</option>
+        <option value="https://skibidisoilet.webhop.me/">Ghost</option>
+        <option value="https://void.purpleutilities.xyz/">Void</option>
+        <option value="https://bruh.dior.ve3.info/">Doge</option>
+      </optgroup>
+      <optgroup label="Advanced Bypassers">
+        <option value="https://ranamaddadaaaadjka.ve3.info/">Rammerhead</option>
+        <option value="https://mxosaijtea.stockcity.ru/">Bolt</option>
+        <option value="https://nox.hervy.se/">Emerald</option>
+      </optgroup>
+      <optgroup label="Custom Access">
+        <option value="https://james.lebron.lebrandeus.com/">Szvy Central</option>
+        <option value="https://octopusspaghetti.co.uk/ ">Noblooc</option>
+        <option value="https://us4-proxy.global.ssl.fastly.net/">US4</option>
+      </optgroup>
+    </select>
+    <button onclick="openProxy()"><i class="fas fa-rocket"></i> Open</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    function openProxy() {
+      const url = document.getElementById("proxySelect").value;
+      window.open(url, '_blank');
+    }
+
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "repulse": {
+            "distance": 100,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>
